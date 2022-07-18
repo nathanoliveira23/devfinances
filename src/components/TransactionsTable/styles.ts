@@ -3,6 +3,33 @@ import styled from "styled-components";
 export const Container = styled.div`
     margin-top: 4rem;
 
+    overflow-x: hidden;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-body) transparent;
+
+    transition: overflow-x, filter 0.2s;
+
+    &:hover {
+        overflow-x: auto;
+        filter: brightness(0.8);
+    }
+
+    &::-webkit-scrollbar {
+        width: 12px;
+        height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--text-body);
+        border-radius: 20px;
+        border: none;
+    }
+
     table {
         width: 100%;
         border-spacing: 0 0.5rem;
