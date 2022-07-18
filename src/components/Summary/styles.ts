@@ -8,14 +8,12 @@ export const Container = styled.div`
 
     overflow-x: hidden;
 
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 
     margin-top: -10rem;
 
     scrollbar-width: thin;
     scrollbar-color: var(--text-body) transparent;
-
-    transition: overflow-x 0.2s;
 
     &:hover {
         overflow-x: auto;

@@ -5,12 +5,6 @@ import { Trash } from 'phosphor-react'
 export function TransactionsTable(){
     const { transactions, handleRemoveTransaction } = useTransactions();
 
-    // function handleRemoveTransaction(id: number) {
-    //     const filteredTransaction = transactions.filter(transaction => transaction.id != id);
-
-    //     setTransactions(filteredTransaction);
-    // }
-
     return(
         <Container>
             <table>

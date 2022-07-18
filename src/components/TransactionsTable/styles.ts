@@ -8,11 +8,9 @@ export const Container = styled.div`
     scrollbar-width: thin;
     scrollbar-color: var(--text-body) transparent;
 
-    transition: overflow-x, filter 0.2s;
 
     &:hover {
         overflow-x: auto;
-        filter: brightness(0.8);
     }
 
     &::-webkit-scrollbar {
