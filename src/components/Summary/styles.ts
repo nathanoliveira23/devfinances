@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const Container = styled.div`
     display: grid;
     //grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -55,8 +56,13 @@ export const Container = styled.div`
         line-height: 3rem;
     }
 
-    &.highlight-background {
+    &.highlight-background-positive {
         background: var(--green);
+        color: #fff;
+    }
+
+    &.highlight-background-negative {
+        background: var(--red);
         color: #fff;
     }
 }

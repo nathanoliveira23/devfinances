@@ -32,10 +32,12 @@ export function Summary() {
                     <p>Entradas</p>
                     <img src={income} alt="Entradas" />
                 </header>
-                <strong>{new Intl.NumberFormat('pt-BR', {
+                <strong>
+                    {new Intl.NumberFormat('pt-BR', {
                             style: 'currency',
                             currency: 'BRL'
-                        }).format(summary.deposits)}</strong>
+                    }).format(summary.deposits)}
+                </strong>
             </div>
 
             <div>
@@ -43,22 +45,42 @@ export function Summary() {
                     <p>Saídas</p>
                     <img src={outcome} alt="Saídas" />
                 </header>
-                <strong>- {new Intl.NumberFormat('pt-BR', {
+                <strong>
+                    - {new Intl.NumberFormat('pt-BR', {
                             style: 'currency',
                             currency: 'BRL'
-                        }).format(summary.withdraw)}</strong>
+                        }).format(summary.withdraw)}
+                </strong>
             </div>
+            
+            { summary.total >= 0 
 
-            <div className='highlight-background'>
+            ? <div className='highlight-background-positive'>
                 <header>
                     <p>Total</p>
                     <img src={total} alt="Total" />
                 </header>
-                <strong>{new Intl.NumberFormat('pt-BR', {
+                <strong>
+                    {new Intl.NumberFormat('pt-BR', {
                             style: 'currency',
                             currency: 'BRL'
-                        }).format(summary.total)}</strong>
-            </div>
+                    }).format(summary.total)}
+                </strong>
+              </div>
+            
+            : <div className='highlight-background-negative'>
+                <header>
+                    <p>Total</p>
+                    <img src={total} alt="Total" />
+                </header>
+                <strong>
+                    {new Intl.NumberFormat('pt-BR', {
+                            style: 'currency',
+                            currency: 'BRL'
+                    }).format(summary.total)}
+                </strong>
+              </div> }
+            
         </Container>
     );
 }
