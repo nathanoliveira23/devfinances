@@ -1,6 +1,6 @@
 import { Container } from "./styles";
 import { useTransactions } from "../../hooks/useTransactions";
-import { Trash } from 'phosphor-react'
+import { TrashSimple } from 'phosphor-react'
 
 export function TransactionsTable(){
     const { transactions, handleRemoveTransaction } = useTransactions();
@@ -31,7 +31,7 @@ export function TransactionsTable(){
                                 <button
                                   type="button"
                                   onClick={() => handleRemoveTransaction(transaction.id)}>
-                                  <Trash size={18}/>
+                                  <TrashSimple size={18}/>
                                 </button>
                             </td>
                         </tr>
