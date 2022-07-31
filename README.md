@@ -9,6 +9,7 @@
 <h1>📷 Project Screenshots:</h1>
 <div align="center">
   <img src="https://user-images.githubusercontent.com/103507450/182027205-d3340c63-6d64-49bf-a794-3986e42d0fbf.png" width= "700px" />
+  <img src="https://user-images.githubusercontent.com/103507450/182027320-9ecf95f8-3909-49a6-99f8-17edc24a751d.png" width= "700px" />
 </div>
 
 <h2>🛠️ Installation Steps:</h2>
